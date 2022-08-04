@@ -17,10 +17,10 @@ print(apid)
 #print(json.dumps(apidata, indent=4))
 
 
-
+more = apid["originator"]
 idioma = apid["language_code"]
 frase = apid["content"]
-autor = apid["id"]
+autor = more["name"]
 print(idioma,frase,autor, sep="\t")
 añadir(idioma,frase,autor)
 print("CITAS", idioma, frase, autor, sep="\t")
